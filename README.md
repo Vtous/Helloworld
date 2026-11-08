@@ -38,7 +38,7 @@ The unified profile assigns AdBlock instead of REJECT so the existing filter swi
 
 Surge refreshes the remote list URLs at a configured interval of 86400 seconds, subject to network and client availability. Install the profile or references on each device once.
 
-The repository includes a daily and manually dispatched [refresh workflow](.github/workflows/sync-rules.yml). GitHub Actions must be enabled and permitted to push to main. Scheduled workflows can be delayed or disabled by GitHub. A failed download leaves generated files untouched. Check the latest Actions run when freshness matters.
+The repository includes a daily, source-change and manually dispatched [refresh workflow](.github/workflows/sync-rules.yml). GitHub Actions must be enabled and permitted to push to main. Scheduled workflows can be delayed or disabled by GitHub. A failed download leaves generated files untouched. Check the latest Actions run when freshness matters.
 
 Local additions live in sources/rules.json. After changing them, regenerate with:
 

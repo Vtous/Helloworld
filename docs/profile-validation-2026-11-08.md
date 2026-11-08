@@ -15,6 +15,7 @@ Date: 2026-11-08. Native parser: installed Surge Mac 6.11.0 build 12720.
 - Native syntax checks returned OK for the local optimized profile, public unified template, both direct-only reference profiles, and a temporary profile containing every generated list expanded into inline Ruleset sections.
 - The public template contains masked node/subscription placeholders, no active external controller, loopback-only Mac listeners and no CA certificate/key. The original controller password is not published.
 - The optional module and its script remain unchanged.
+- The cloud refresh workflow completed successfully after a source-change push: [run 42466114066](https://github.com/Vtous/Helloworld/actions/runs/42466114066). Public upstream downloads and generation passed; no rule output changes were needed.
 
 ## Output sizes
 
@@ -43,6 +44,6 @@ The profile was reduced from 401 to 110 lines, including comments and whitespace
 
 The routing model covers ordinary domain and process conditions only; it does not emulate DNS-triggered IP matching, ASN lookups, GEOIP, TLS SNI, URL matching or the full Surge engine. Native parser acceptance is not a live routing test.
 
-No working node host/password or subscription endpoint was supplied. Connectivity, selected subscription nodes, HTTPS test-endpoint behavior from those nodes, real ad coverage, iOS runtime behavior and the scheduled refresh run have not been verified on the user's devices. The current active profile was not changed.
+No working node host/password or subscription endpoint was supplied. Connectivity, selected subscription nodes, HTTPS test-endpoint behavior from those nodes, real ad coverage, iOS runtime behavior have not been verified on the user's devices. The refresh job passed once in GitHub Actions; its future scheduled start time is not guaranteed. The current active profile was not changed.
 
 The change in general advertising priority and AI policy-group behavior is documented in [profile changes](profile-update-2026-11-08.md). Review matched rules after importing, and restore the old profile if behavior differs from expectations.
