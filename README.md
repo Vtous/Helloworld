@@ -2,6 +2,17 @@
 
 用于存放 Vtous 的 Surge 配置、模块和相关脚本。
 
+## 当前配置编写基线
+
+用户使用 Surge Mac 6.11 与 iOS 6 TestFlight。2026-11-08 已核对官网版本源与官方手册：
+
+- [最新功能、版本门槛与配置规范](docs/surge-current-features-2026-11-08.md)
+- [Mac 新语法参考配置](examples/surge-macos-modern.conf)
+- [iOS 新语法参考配置](examples/surge-ios-modern.conf)
+- [解析器验证记录](examples/validation.md)
+
+参考配置是直连基线，不包含私人节点/订阅，不应覆盖当前配置。已在使用的 adgoaway 保持原样；MITM 相关规则仍默认注释。
+
 ## adgoaway
 
 合并小寻与两步路的广告拦截线索。创建于 2026-11-08；未进行真机安装、抓包或效果验证。
