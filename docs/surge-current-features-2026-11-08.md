@@ -64,12 +64,14 @@ The iOS 6 interface also includes a configurable dashboard, request filters, pro
 15. Encrypted DNS is not ad filtering. tcp:// DNS is not encrypted.
 16. Enable inbound services, shared proxy ports and control APIs only when needed.
 
-## Repository module
+## Repository files
 
-adgoaway contains the working domain list for Xiaoxun and 2bulu.
+adgoaway.list stores the eight domain conditions for Xiaoxun and 2bulu. Reference it from the main profile with RULE-SET and the REJECT policy. Add the reference before updating or disabling the old combined module.
 
-- Default mode: eight domain rejections.
-- Optional mode: HTTPS URL rejection and response cleanup.
+adgoaway.sgmodule contains only the optional HTTPS features. Its six configuration lines remain disabled as comments.
+
+- Default filtering: the referenced domain list; no MITM required.
+- Optional filtering: HTTPS URL rejection and response cleanup through the module.
 - The response script preserves unrelated fields and passes malformed responses through.
 - Existing ad caches and operating-system deep links may bypass network-based blocking.
 - Clear or disable a conflicting rule before assuming a module failure.
@@ -82,9 +84,9 @@ The six MITM configuration lines remain commented out in the module. Uncommentin
 - [macOS](../examples/surge-macos-modern.conf)
 - [iOS](../examples/surge-ios-modern.conf)
 
-Both examples are direct-routing references with an inline LocalAds set, pre-matching rejection and a categorized Outbound group.
+Both examples are direct-routing references with a remote adgoaway.list reference and a categorized Outbound group. They no longer duplicate the eight domain conditions inline.
 
-They contain the same eight domain conditions as adgoaway. Avoid duplicating this list across enabled profiles and modules.
+The default reference uses ordinary rule order. The optional pre-matching form is documented in comments because it overrides ordinary allow-rule precedence. Do not enable both forms at once.
 
 Merge selected sections into a working local profile and retain its real proxies and routing preferences. Do not replace an existing profile with a direct-only reference.
 
