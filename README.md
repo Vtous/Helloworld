@@ -14,7 +14,7 @@ Restore masked node and subscription values locally before importing. Keep the o
 | --- | --- |
 | [adgoaway.list](adgoaway.list) | Personal ad filters, Xiaoxun, 2bulu, and the existing general advertising source |
 | [AI.list](AI.list) | Combined OpenAI, Claude, process and dependency conditions |
-| [AI-Priority.list](AI-Priority.list) | Original high-priority Claude and login exceptions |
+| [AI-Priority.list](AI-Priority.list) | Legacy compatibility subset; not used by the current profile |
 | [Direct.list](Direct.list) | Banks, brokers, market data, messaging and music allow rules |
 | [DirectFallback.list](DirectFallback.list) | Broad domestic suffix fallbacks; keep after service rules |
 | [LAN.list](LAN.list) | Local networks and routers |
@@ -33,6 +33,8 @@ RULE-SET,https://raw.githubusercontent.com/Vtous/Helloworld/main/adgoaway.list,R
 ~~~
 
 The unified profile assigns AdBlock instead of REJECT so the existing filter switch remains available. The expanded ad list affects more services than the former eight-condition list. Domain/IP filtering works without MITM; HTTPS URL conditions cannot inspect a decrypted full URL while MITM is off. Advertising coverage is not guaranteed.
+
+The current profile references AI.list once, after advertising and precise direct rules. AI-Priority.list contains no additional conditions; its ten entries are already in AI.list. Its old URL is retained for previously installed profiles. The unified profile includes short Chinese comments.
 
 ## Updates
 

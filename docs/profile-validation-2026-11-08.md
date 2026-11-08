@@ -6,7 +6,7 @@ Date: 2026-11-08. Native parser: installed Surge Mac 6.11.0 build 12720.
 
 - All 160 original hand-written rule conditions are retained, either in generated lists or as explicit overrides.
 - All normalized conditions from the 12 referenced upstream sources are present in the corresponding generated outputs.
-- All 16 remote RULE-SET references in the unified profile use Vtous/Helloworld.
+- All 15 remote RULE-SET references in the unified profile use Vtous/Helloworld.
 - Exact duplicate conditions are removed within each generated output. Functional per-rule modifiers are preserved.
 - The original eight adgoaway conditions remain present in the expanded 842-rule ad list.
 - The offline generator reproduces the committed outputs without differences.
@@ -23,7 +23,7 @@ Date: 2026-11-08. Native parser: installed Surge Mac 6.11.0 build 12720.
 | --- | ---: |
 | adgoaway.list | 842 |
 | AI.list | 54 |
-| AI-Priority.list | 10 |
+| AI-Priority.list (legacy compatibility only) | 10 |
 | Direct.list | 58 |
 | LAN.list | 15 |
 | DirectFallback.list | 6 |
@@ -38,7 +38,11 @@ Date: 2026-11-08. Native parser: installed Surge Mac 6.11.0 build 12720.
 | Proxy.list | 134 |
 | China.list | 24757 |
 
-The profile was reduced from 401 to 110 lines, including comments and whitespace. This is a maintenance improvement, not a measured speed increase.
+The original consolidation reduced the profile from 401 to 110 lines. The current revision adds concise Chinese comments and removes the redundant early AI-Priority reference. This is a maintenance improvement, not a measured speed increase.
+
+## Single-list AI revision
+
+The 10 legacy priority conditions are all present in the 54-condition AI.list. The current profile references AI.list once, after ads and precise direct services; AI-Priority.list is kept only for old URL compatibility. No AI condition was removed. The 39 selected routing cases passed again, together with two extra checks that Claude process matching does not override a blocked ad hostname or a LAN direct rule. The revised profile and its expanded inline rule sets passed the native syntax check. Earlier non-AI matches now take precedence over the former Claude process/domain exceptions. See the profile changes for this intentional ordering difference.
 
 ## Limits
 
