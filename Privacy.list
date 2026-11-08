@@ -1,0 +1,10 @@
+# NAME: Privacy
+# TYPE: RULE-SET
+# Policy-free conditions. Assign a policy in the main profile.
+# Modified for personal aggregation; provided without warranty.
+# Edit sources/rules.json, then run tools/sync_rules.py.
+# Source revisions are recorded in sources/manifest.json.
+# PROCESS-NAME conditions apply on macOS only.
+
+AND,((PROCESS-NAME,DoubaoIme), (DOMAIN,log.zijieapi.com))
+AND,((PROCESS-NAME,DoubaoIme), (DOMAIN,pc-mon.zijieapi.com))

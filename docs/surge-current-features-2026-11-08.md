@@ -66,7 +66,7 @@ The iOS 6 interface also includes a configurable dashboard, request filters, pro
 
 ## Repository files
 
-adgoaway.list stores the eight domain conditions for Xiaoxun and 2bulu. Reference it from the main profile with RULE-SET and the REJECT policy. Add the reference before updating or disabling the old combined module.
+adgoaway.list aggregates the personal ad conditions, the original Xiaoxun/2bulu filters and the previously referenced general advertising source. The unified profile uses the AdBlock group. See [profile changes](profile-update-2026-11-08.md) for the priority change and remaining service lists.
 
 adgoaway.sgmodule contains only the optional HTTPS features. Its six configuration lines remain disabled as comments.
 
@@ -84,9 +84,9 @@ The six MITM configuration lines remain commented out in the module. Uncommentin
 - [macOS](../examples/surge-macos-modern.conf)
 - [iOS](../examples/surge-ios-modern.conf)
 
-Both examples are direct-routing references with a remote adgoaway.list reference and a categorized Outbound group. They no longer duplicate the eight domain conditions inline.
+Both examples are direct-routing references with a remote adgoaway.list and a categorized Outbound group. The full masked personal template is [surge-unified.conf](../profiles/surge-unified.conf).
 
-The default reference uses ordinary rule order. The optional pre-matching form is documented in comments because it overrides ordinary allow-rule precedence. Do not enable both forms at once.
+Use ordinary rule order. Do not use pre-matching with the expanded mixed ad list, which includes URL-REGEX and USER-AGENT conditions.
 
 Merge selected sections into a working local profile and retain its real proxies and routing preferences. Do not replace an existing profile with a direct-only reference.
 

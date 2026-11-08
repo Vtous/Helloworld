@@ -1,0 +1,28 @@
+name: Refresh rule sets
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 4 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: refresh-rule-sets
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Refresh and validate
+        run: python3 tools/sync_rules.py
+      - name: Commit generated rule sets
+        run: |
+          git add -- '*.list' sources/manifest.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh personal rule sets'
+          git push

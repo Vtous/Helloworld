@@ -1,0 +1,22 @@
+# NAME: LAN
+# TYPE: RULE-SET
+# Policy-free conditions. Assign a policy in the main profile.
+# Modified for personal aggregation; provided without warranty.
+# Edit sources/rules.json, then run tools/sync_rules.py.
+# Source revisions are recorded in sources/manifest.json.
+
+DOMAIN,router.asus.com
+DOMAIN,asusrouter.com
+DOMAIN,www.asusrouter.com
+DOMAIN,routerlogin.net
+DOMAIN,amplifi.lan
+DOMAIN-SUFFIX,lan
+DOMAIN-SUFFIX,local
+IP-CIDR,127.0.0.0/8,no-resolve
+IP-CIDR,10.0.0.0/8,no-resolve
+IP-CIDR,172.16.0.0/12,no-resolve
+IP-CIDR,192.168.0.0/16,no-resolve
+IP-CIDR,169.254.0.0/16,no-resolve
+IP-CIDR,100.64.0.0/10,no-resolve
+IP-CIDR,224.0.0.0/4,no-resolve
+IP-CIDR,255.255.255.255/32,no-resolve

@@ -1,0 +1,18 @@
+# NAME: AI-Priority
+# TYPE: RULE-SET
+# Policy-free conditions. Assign a policy in the main profile.
+# Modified for personal aggregation; provided without warranty.
+# Edit sources/rules.json, then run tools/sync_rules.py.
+# Source revisions are recorded in sources/manifest.json.
+# PROCESS-NAME conditions apply on macOS only.
+
+PROCESS-NAME,/Applications/Claude.app/
+PROCESS-NAME,Claude*
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN,accounts.google.com
+DOMAIN-SUFFIX,statsig.com
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,sentry.io

@@ -1,0 +1,10 @@
+# NAME: Trading
+# TYPE: RULE-SET
+# Policy-free conditions. Assign a policy in the main profile.
+# Modified for personal aggregation; provided without warranty.
+# Edit sources/rules.json, then run tools/sync_rules.py.
+# Source revisions are recorded in sources/manifest.json.
+
+DOMAIN-SUFFIX,tradingview.com
+DOMAIN-SUFFIX,tradingview-widget.com
+DOMAIN-SUFFIX,gmgn.ai

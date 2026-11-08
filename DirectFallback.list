@@ -1,0 +1,13 @@
+# NAME: DirectFallback
+# TYPE: RULE-SET
+# Policy-free conditions. Assign a policy in the main profile.
+# Modified for personal aggregation; provided without warranty.
+# Edit sources/rules.json, then run tools/sync_rules.py.
+# Source revisions are recorded in sources/manifest.json.
+
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,tencent.com
+DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,126.net
+DOMAIN-SUFFIX,netease.com

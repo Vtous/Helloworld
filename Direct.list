@@ -1,0 +1,65 @@
+# NAME: Direct
+# TYPE: RULE-SET
+# Policy-free conditions. Assign a policy in the main profile.
+# Modified for personal aggregation; provided without warranty.
+# Edit sources/rules.json, then run tools/sync_rules.py.
+# Source revisions are recorded in sources/manifest.json.
+
+DOMAIN-SUFFIX,cmbchina.com
+DOMAIN-SUFFIX,cmburl.cn
+DOMAIN-SUFFIX,icbc.com.cn
+DOMAIN-SUFFIX,ccb.com
+DOMAIN-SUFFIX,abchina.com
+DOMAIN-SUFFIX,abchina.com.cn
+DOMAIN-SUFFIX,pingan.com
+DOMAIN-SUFFIX,pingan.com.cn
+DOMAIN-SUFFIX,spdb.com.cn
+DOMAIN-SUFFIX,psbc.com
+DOMAIN-SUFFIX,psbc.com.cn
+DOMAIN-SUFFIX,95516.com
+DOMAIN-SUFFIX,unionpay.com
+DOMAIN-SUFFIX,bankcomm.com
+DOMAIN-SUFFIX,boc.cn
+DOMAIN-SUFFIX,cebbank.com
+DOMAIN-SUFFIX,cib.com.cn
+DOMAIN-SUFFIX,hxb.com.cn
+DOMAIN-SUFFIX,cgbchina.com.cn
+DOMAIN-SUFFIX,eastmoney.com
+DOMAIN-SUFFIX,10jqka.com.cn
+DOMAIN-SUFFIX,citics.com
+DOMAIN-SUFFIX,htsc.com.cn
+DOMAIN-SUFFIX,gtja.com
+DOMAIN-SUFFIX,chinastock.com.cn
+DOMAIN-SUFFIX,essence.com.cn
+DOMAIN-SUFFIX,cnht.com.cn
+DOMAIN-SUFFIX,sse.com.cn
+DOMAIN-SUFFIX,szse.cn
+DOMAIN-SUFFIX,csindex.com.cn
+DOMAIN-SUFFIX,weixin.qq.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,wechatapp.com
+DOMAIN-SUFFIX,servicewechat.com
+DOMAIN-SUFFIX,wechatpay.cn
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,wx.qq.com
+DOMAIN-SUFFIX,qpic.cn
+DOMAIN-SUFFIX,idqqimg.com
+DOMAIN-SUFFIX,qlogo.cn
+DOMAIN-SUFFIX,myqcloud.com
+DOMAIN-SUFFIX,tencentcos.cn
+DOMAIN-SUFFIX,tencent-cloud.com
+DOMAIN-SUFFIX,tencent-cloud.net
+DOMAIN-SUFFIX,tencentcs.com
+DOMAIN-SUFFIX,myapp.com
+DOMAIN-SUFFIX,wxapp.tc.qq.com
+DOMAIN-SUFFIX,qqmusic.qq.com
+DOMAIN-SUFFIX,y.qq.com
+DOMAIN-SUFFIX,music.qq.com
+DOMAIN-SUFFIX,tencentmusic.com
+DOMAIN-SUFFIX,stream.qqmusic.qq.com
+DOMAIN-SUFFIX,aqqmusic.tc.qq.com
+DOMAIN-SUFFIX,music.126.net
+DOMAIN-SUFFIX,music.163.com
+DOMAIN-SUFFIX,interface.music.163.com
+DOMAIN-SUFFIX,apm.music.163.com
+DOMAIN-SUFFIX,mam.netease.com

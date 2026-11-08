@@ -1,0 +1,300 @@
+{
+  "local": {
+    "adgoaway": [
+      "DOMAIN-SUFFIX,gdt.qq.com",
+      "DOMAIN-SUFFIX,e.qq.com",
+      "DOMAIN-SUFFIX,l.qq.com",
+      "DOMAIN-SUFFIX,pgdt.gtimg.cn",
+      "DOMAIN,adsmind.tc.qq.com",
+      "DOMAIN,splashqqlive.gtimg.com",
+      "DOMAIN-SUFFIX,gdtimg.com",
+      "DOMAIN-SUFFIX,ugdtimg.com",
+      "DOMAIN-SUFFIX,ad.weixin.qq.com",
+      "DOMAIN,adsfile.qq.com",
+      "DOMAIN,adfilter.imtt.qq.com",
+      "DOMAIN,btrace.qq.com",
+      "DOMAIN,oth.eve.mdt.qq.com",
+      "DOMAIN,oth.str.mdt.qq.com",
+      "DOMAIN,oth.update.mdt.qq.com",
+      "DOMAIN-SUFFIX,beacon.qq.com",
+      "DOMAIN-SUFFIX,pangolin-sdk-toutiao.com",
+      "DOMAIN-SUFFIX,pangolin.snssdk.com",
+      "DOMAIN-SUFFIX,pglstatp-toutiao.com",
+      "DOMAIN-SUFFIX,pglstatp-snssdk-toutiao.com",
+      "DOMAIN-SUFFIX,ad.toutiao.com",
+      "DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com",
+      "DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com",
+      "DOMAIN-SUFFIX,adukwai.com",
+      "DOMAIN-SUFFIX,e.kuaishou.com",
+      "DOMAIN-SUFFIX,mobads.baidu.com",
+      "DOMAIN-SUFFIX,afd.baidu.com",
+      "DOMAIN-SUFFIX,als.baidu.com",
+      "DOMAIN-SUFFIX,duapps.com",
+      "DOMAIN-SUFFIX,sigmob.com",
+      "DOMAIN-SUFFIX,adservice.sigmob.cn",
+      "DOMAIN-SUFFIX,adtrack.sigmob.cn",
+      "DOMAIN-SUFFIX,tanx.com",
+      "DOMAIN-SUFFIX,alimama.com",
+      "DOMAIN-SUFFIX,adashx.ut.taobao.com",
+      "DOMAIN,adstats.tencentmusic.com",
+      "DOMAIN,ad.tencentmusic.com",
+      "DOMAIN,tmead.y.qq.com",
+      "DOMAIN,tmeadcomm.y.qq.com",
+      "DOMAIN,tmeadbak.y.qq.com",
+      "DOMAIN,tmead.th.ovscdns.com",
+      "DOMAIN,monitor.music.qq.com",
+      "DOMAIN,stat.tme.com.cn",
+      "DOMAIN,adse.ximalaya.com",
+      "DOMAIN,adse.wsa.ximalaya.com",
+      "DOMAIN,adse.test.ximalaya.com",
+      "DOMAIN,adsebs.ximalaya.com",
+      "DOMAIN,adbehavior.ximalaya.com",
+      "DOMAIN,adbehavior.wsa.ximalaya.com",
+      "DOMAIN,ad.ximalaya.com",
+      "DOMAIN-SUFFIX,xdcs-collector.ximalaya.com",
+      "DOMAIN-SUFFIX,x-adnet.com",
+      "DOMAIN-SUFFIX,admobile.top",
+      "DOMAIN-SUFFIX,yfanads.com",
+      "DOMAIN-SUFFIX,yfanads.cn",
+      "DOMAIN-SUFFIX,adxvip.com",
+      "DOMAIN,impdsp.meituan.com",
+      "DOMAIN,clickdsp.meituan.com",
+      "DOMAIN,cdn.51tuiyi.com",
+      "DOMAIN,yfan-dsp.tos-cn-shanghai.volces.com"
+    ],
+    "AI-Priority": [
+      "PROCESS-NAME,/Applications/Claude.app/",
+      "PROCESS-NAME,Claude*",
+      "DOMAIN-SUFFIX,anthropic.com",
+      "DOMAIN-SUFFIX,claude.ai",
+      "DOMAIN-SUFFIX,claude.com",
+      "DOMAIN-SUFFIX,claudeusercontent.com",
+      "DOMAIN,accounts.google.com",
+      "DOMAIN-SUFFIX,statsig.com",
+      "DOMAIN-SUFFIX,featuregates.org",
+      "DOMAIN-SUFFIX,sentry.io"
+    ],
+    "AI": [
+      "PROCESS-NAME,/Applications/Claude.app/",
+      "PROCESS-NAME,Claude*",
+      "DOMAIN-SUFFIX,anthropic.com",
+      "DOMAIN-SUFFIX,claude.ai",
+      "DOMAIN-SUFFIX,claude.com",
+      "DOMAIN-SUFFIX,claudeusercontent.com",
+      "DOMAIN,accounts.google.com",
+      "DOMAIN-SUFFIX,statsig.com",
+      "DOMAIN-SUFFIX,featuregates.org",
+      "DOMAIN-SUFFIX,sentry.io",
+      "PROCESS-NAME,codex",
+      "PROCESS-NAME,ChatGPT",
+      "DOMAIN-SUFFIX,chatgpt.com",
+      "DOMAIN-SUFFIX,openai.com",
+      "DOMAIN-SUFFIX,oaistatic.com",
+      "DOMAIN-SUFFIX,oaiusercontent.com"
+    ],
+    "Direct": [
+      "DOMAIN-SUFFIX,cmbchina.com",
+      "DOMAIN-SUFFIX,cmburl.cn",
+      "DOMAIN-SUFFIX,icbc.com.cn",
+      "DOMAIN-SUFFIX,ccb.com",
+      "DOMAIN-SUFFIX,abchina.com",
+      "DOMAIN-SUFFIX,abchina.com.cn",
+      "DOMAIN-SUFFIX,pingan.com",
+      "DOMAIN-SUFFIX,pingan.com.cn",
+      "DOMAIN-SUFFIX,spdb.com.cn",
+      "DOMAIN-SUFFIX,psbc.com",
+      "DOMAIN-SUFFIX,psbc.com.cn",
+      "DOMAIN-SUFFIX,95516.com",
+      "DOMAIN-SUFFIX,unionpay.com",
+      "DOMAIN-SUFFIX,bankcomm.com",
+      "DOMAIN-SUFFIX,boc.cn",
+      "DOMAIN-SUFFIX,cebbank.com",
+      "DOMAIN-SUFFIX,cib.com.cn",
+      "DOMAIN-SUFFIX,hxb.com.cn",
+      "DOMAIN-SUFFIX,cgbchina.com.cn",
+      "DOMAIN-SUFFIX,eastmoney.com",
+      "DOMAIN-SUFFIX,10jqka.com.cn",
+      "DOMAIN-SUFFIX,citics.com",
+      "DOMAIN-SUFFIX,htsc.com.cn",
+      "DOMAIN-SUFFIX,gtja.com",
+      "DOMAIN-SUFFIX,chinastock.com.cn",
+      "DOMAIN-SUFFIX,essence.com.cn",
+      "DOMAIN-SUFFIX,cnht.com.cn",
+      "DOMAIN-SUFFIX,sse.com.cn",
+      "DOMAIN-SUFFIX,szse.cn",
+      "DOMAIN-SUFFIX,csindex.com.cn",
+      "DOMAIN-SUFFIX,weixin.qq.com",
+      "DOMAIN-SUFFIX,wechat.com",
+      "DOMAIN-SUFFIX,wechatapp.com",
+      "DOMAIN-SUFFIX,servicewechat.com",
+      "DOMAIN-SUFFIX,wechatpay.cn",
+      "DOMAIN-SUFFIX,tenpay.com",
+      "DOMAIN-SUFFIX,wx.qq.com",
+      "DOMAIN-SUFFIX,qpic.cn",
+      "DOMAIN-SUFFIX,idqqimg.com",
+      "DOMAIN-SUFFIX,qlogo.cn",
+      "DOMAIN-SUFFIX,myqcloud.com",
+      "DOMAIN-SUFFIX,tencentcos.cn",
+      "DOMAIN-SUFFIX,tencent-cloud.com",
+      "DOMAIN-SUFFIX,tencent-cloud.net",
+      "DOMAIN-SUFFIX,tencentcs.com",
+      "DOMAIN-SUFFIX,myapp.com",
+      "DOMAIN-SUFFIX,wxapp.tc.qq.com",
+      "DOMAIN-SUFFIX,qqmusic.qq.com",
+      "DOMAIN-SUFFIX,y.qq.com",
+      "DOMAIN-SUFFIX,music.qq.com",
+      "DOMAIN-SUFFIX,tencentmusic.com",
+      "DOMAIN-SUFFIX,stream.qqmusic.qq.com",
+      "DOMAIN-SUFFIX,aqqmusic.tc.qq.com",
+      "DOMAIN-SUFFIX,music.126.net",
+      "DOMAIN-SUFFIX,music.163.com",
+      "DOMAIN-SUFFIX,interface.music.163.com",
+      "DOMAIN-SUFFIX,apm.music.163.com",
+      "DOMAIN-SUFFIX,mam.netease.com"
+    ],
+    "LAN": [
+      "DOMAIN,router.asus.com",
+      "DOMAIN,asusrouter.com",
+      "DOMAIN,www.asusrouter.com",
+      "DOMAIN,routerlogin.net",
+      "DOMAIN,amplifi.lan",
+      "DOMAIN-SUFFIX,lan",
+      "DOMAIN-SUFFIX,local",
+      "IP-CIDR,127.0.0.0/8,no-resolve",
+      "IP-CIDR,10.0.0.0/8,no-resolve",
+      "IP-CIDR,172.16.0.0/12,no-resolve",
+      "IP-CIDR,192.168.0.0/16,no-resolve",
+      "IP-CIDR,169.254.0.0/16,no-resolve",
+      "IP-CIDR,100.64.0.0/10,no-resolve",
+      "IP-CIDR,224.0.0.0/4,no-resolve",
+      "IP-CIDR,255.255.255.255/32,no-resolve"
+    ],
+    "DirectFallback": [
+      "DOMAIN-SUFFIX,qq.com",
+      "DOMAIN-SUFFIX,gtimg.com",
+      "DOMAIN-SUFFIX,tencent.com",
+      "DOMAIN-SUFFIX,163.com",
+      "DOMAIN-SUFFIX,126.net",
+      "DOMAIN-SUFFIX,netease.com"
+    ],
+    "Privacy": [
+      "AND,((PROCESS-NAME,DoubaoIme), (DOMAIN,log.zijieapi.com))",
+      "AND,((PROCESS-NAME,DoubaoIme), (DOMAIN,pc-mon.zijieapi.com))"
+    ],
+    "Trading": [
+      "DOMAIN-SUFFIX,tradingview.com",
+      "DOMAIN-SUFFIX,tradingview-widget.com",
+      "DOMAIN-SUFFIX,gmgn.ai"
+    ],
+    "Finance-Priority": [
+      "DOMAIN-SUFFIX,paypal.com",
+      "DOMAIN-SUFFIX,truthsocial.com"
+    ]
+  },
+  "pipelines": {
+    "adgoaway": [
+      "Advertising"
+    ],
+    "AI": [
+      "OpenAI",
+      "Anthropic"
+    ],
+    "Cryptocurrency": [
+      "Cryptocurrency"
+    ],
+    "Finance": [
+      "PayPal"
+    ],
+    "YouTube": [
+      "YouTube"
+    ],
+    "Telegram": [
+      "Telegram"
+    ],
+    "Apple": [
+      "Apple"
+    ],
+    "Proxy": [
+      "Proxy"
+    ],
+    "China": [
+      "China",
+      "ChinaIPs",
+      "ASNChina"
+    ]
+  },
+  "upstreams": {
+    "OpenAI": {
+      "repository": "blackmatrix7/ios_rule_script",
+      "path": "rule/Surge/OpenAI/OpenAI.list",
+      "ref": "master",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list"
+    },
+    "Anthropic": {
+      "repository": "xiaolai/anthropic-claude-surge-rules-set",
+      "path": "dist/anthropic.list",
+      "ref": "main",
+      "url": "https://raw.githubusercontent.com/xiaolai/anthropic-claude-surge-rules-set/main/dist/anthropic.list"
+    },
+    "Advertising": {
+      "repository": "blackmatrix7/ios_rule_script",
+      "path": "rule/Surge/Advertising/Advertising.list",
+      "ref": "master",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list"
+    },
+    "PayPal": {
+      "repository": "blackmatrix7/ios_rule_script",
+      "path": "rule/Surge/PayPal/PayPal.list",
+      "ref": "master",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list"
+    },
+    "Cryptocurrency": {
+      "repository": "blackmatrix7/ios_rule_script",
+      "path": "rule/Surge/Cryptocurrency/Cryptocurrency.list",
+      "ref": "master",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cryptocurrency/Cryptocurrency.list"
+    },
+    "YouTube": {
+      "repository": "blackmatrix7/ios_rule_script",
+      "path": "rule/Surge/YouTube/YouTube.list",
+      "ref": "master",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list"
+    },
+    "Telegram": {
+      "repository": "blackmatrix7/ios_rule_script",
+      "path": "rule/Surge/Telegram/Telegram.list",
+      "ref": "master",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list"
+    },
+    "Apple": {
+      "repository": "blackmatrix7/ios_rule_script",
+      "path": "rule/Surge/Apple/Apple.list",
+      "ref": "master",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list"
+    },
+    "Proxy": {
+      "repository": "blackmatrix7/ios_rule_script",
+      "path": "rule/Surge/Proxy/Proxy.list",
+      "ref": "master",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list"
+    },
+    "China": {
+      "repository": "blackmatrix7/ios_rule_script",
+      "path": "rule/Surge/China/China.list",
+      "ref": "master",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China.list"
+    },
+    "ChinaIPs": {
+      "repository": "blackmatrix7/ios_rule_script",
+      "path": "rule/Surge/ChinaIPs/ChinaIPs.list",
+      "ref": "master",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list"
+    },
+    "ASNChina": {
+      "repository": "VirgilClyne/GetSomeFries",
+      "path": "ruleset/ASN.China.list",
+      "ref": "main",
+      "url": "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+    }
+  }
+}

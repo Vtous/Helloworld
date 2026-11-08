@@ -1,0 +1,228 @@
+{
+  "format": 1,
+  "outputs": {
+    "AI-Priority.list": {
+      "rules": 10,
+      "sha256": "ba768143c3dbecd19a786d9b99af9920a2e30b7949c58b27aa705cf3e2528eb3",
+      "upstreams": []
+    },
+    "AI.list": {
+      "rules": 54,
+      "sha256": "0a78ee577c7eb6e636c8b91ccfe5c80e841883f77e527bbfb2c642dda3cd1dbb",
+      "upstreams": [
+        "OpenAI",
+        "Anthropic"
+      ]
+    },
+    "Apple.list": {
+      "rules": 56,
+      "sha256": "c3645d9815c121b824ef9c7c0df9c4706d7c6a473680ced9631c880cb678b83c",
+      "upstreams": [
+        "Apple"
+      ]
+    },
+    "China.list": {
+      "rules": 24757,
+      "sha256": "960056160bed8a089d5b19f9cb6d584f3b22ab665d232bc946a4732b5704a436",
+      "upstreams": [
+        "China",
+        "ChinaIPs",
+        "ASNChina"
+      ]
+    },
+    "Cryptocurrency.list": {
+      "rules": 43,
+      "sha256": "c38a6ef9c5e54b4dbda844442c4cf50ecfbf61addc0391ee9c498151dd78f4af",
+      "upstreams": [
+        "Cryptocurrency"
+      ]
+    },
+    "Direct.list": {
+      "rules": 58,
+      "sha256": "f8d84416789264f1bb0bc7d272fbb162d80ecb1eb8f57fcc3e55d130201b0b56",
+      "upstreams": []
+    },
+    "DirectFallback.list": {
+      "rules": 6,
+      "sha256": "f92c65109012b53ba1a8b847c0a2bfa71ecb78fba20f001baa90dcc2994e3df9",
+      "upstreams": []
+    },
+    "Finance-Priority.list": {
+      "rules": 2,
+      "sha256": "59dd2d00d0a097120064f2ff23c7be95fa61fae5a89a5f9cf11c9c889879d727",
+      "upstreams": []
+    },
+    "Finance.list": {
+      "rules": 248,
+      "sha256": "62226c5a5bf75780bf0922f04183ea0b18f2e49e5ef584b9b15355008ad4f21c",
+      "upstreams": [
+        "PayPal"
+      ]
+    },
+    "LAN.list": {
+      "rules": 15,
+      "sha256": "532f769313c9b723c315cae7bc14e886706558e1dc9e32f6cb641d68a0d209d3",
+      "upstreams": []
+    },
+    "Privacy.list": {
+      "rules": 2,
+      "sha256": "35afd5204d547ce6c8fa9fd1b95f183f3d3d7e6ce22f14a8d94aac065f69f1db",
+      "upstreams": []
+    },
+    "Proxy.list": {
+      "rules": 134,
+      "sha256": "64b66d1962114d3f1e0a21a1c058bfa63d52ee621110fc5d4b73576c1778a8cd",
+      "upstreams": [
+        "Proxy"
+      ]
+    },
+    "Telegram.list": {
+      "rules": 46,
+      "sha256": "769ab71e768a260a92a62af69af9b003fe558413ca5059f5b9835184a31a2d18",
+      "upstreams": [
+        "Telegram"
+      ]
+    },
+    "Trading.list": {
+      "rules": 3,
+      "sha256": "8ad886aa57591059a1eaea43af3992b3f7ade6028db4160ead68e39e1f08ed84",
+      "upstreams": []
+    },
+    "YouTube.list": {
+      "rules": 190,
+      "sha256": "48b59f98d843c81a0a348e6c1900c9f4b49b4ea7128bf2e636e3be102e31b368",
+      "upstreams": [
+        "YouTube"
+      ]
+    },
+    "adgoaway.list": {
+      "rules": 842,
+      "sha256": "c7c4149ca885b943bbbe59ad757a5670822ecc48a0a4848ed2ae79b561110ebc",
+      "upstreams": [
+        "Advertising"
+      ]
+    }
+  },
+  "upstreams": {
+    "ASNChina": {
+      "fetched_at": "2026-11-08T09:03:07.451454+00:00",
+      "git_blob_sha": "4d5aaae318fe0859ac18d06eae308bbb9234fafd",
+      "path": "ruleset/ASN.China.list",
+      "ref": "main",
+      "repository": "VirgilClyne/GetSomeFries",
+      "rules": 5076,
+      "sha256": "50f106604b9da0b0adc3f17f0d004dd129684ae95811ac29f13471332c8bcafa",
+      "url": "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+    },
+    "Advertising": {
+      "fetched_at": "2026-11-08T09:03:07.449783+00:00",
+      "git_blob_sha": "4a334668a6f77eb35cfd412ff2a0ec5932da45d3",
+      "path": "rule/Surge/Advertising/Advertising.list",
+      "ref": "master",
+      "repository": "blackmatrix7/ios_rule_script",
+      "rules": 782,
+      "sha256": "cda3e6804f933755773cfa8e5894f07489bfa1653951fc3780f4a21da02a5b5d",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list"
+    },
+    "Anthropic": {
+      "fetched_at": "2026-11-08T09:03:07.449720+00:00",
+      "git_blob_sha": "445655f6882b57293ddf01fca2e42bf9371d1e85",
+      "path": "dist/anthropic.list",
+      "ref": "main",
+      "repository": "xiaolai/anthropic-claude-surge-rules-set",
+      "rules": 13,
+      "sha256": "70a7b5f15b51a275f85d630e9420fac84ecb4dd3bb54c26ba58f4277761b444b",
+      "url": "https://raw.githubusercontent.com/xiaolai/anthropic-claude-surge-rules-set/main/dist/anthropic.list"
+    },
+    "Apple": {
+      "fetched_at": "2026-11-08T09:03:07.449836+00:00",
+      "git_blob_sha": "cc01dc77acd7d31dbde5682340a5276cc7d66445",
+      "path": "rule/Surge/Apple/Apple.list",
+      "ref": "master",
+      "repository": "blackmatrix7/ios_rule_script",
+      "rules": 56,
+      "sha256": "cdfd3d4746541b6a73b129e510b37ed8b77e0b9737270f7fc83448304560ffbd",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list"
+    },
+    "China": {
+      "fetched_at": "2026-11-08T09:03:07.449854+00:00",
+      "git_blob_sha": "8ea635e9719ee44827d59651fe2d322fb7e4ad44",
+      "path": "rule/Surge/China/China.list",
+      "ref": "master",
+      "repository": "blackmatrix7/ios_rule_script",
+      "rules": 63,
+      "sha256": "15890ccb51dbc91f61aefb4fd4634c8cc030be7f2dc273dfd9e363e6d99e1451",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China.list"
+    },
+    "ChinaIPs": {
+      "fetched_at": "2026-11-08T09:03:07.451155+00:00",
+      "git_blob_sha": "c2faacb534a67e3081c0b1f193a468789f5af552",
+      "path": "rule/Surge/ChinaIPs/ChinaIPs.list",
+      "ref": "master",
+      "repository": "blackmatrix7/ios_rule_script",
+      "rules": 19619,
+      "sha256": "fed4ed76b77828c2616770aa403604afe50ef9acfa14888266afb2452b4e1251",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list"
+    },
+    "Cryptocurrency": {
+      "fetched_at": "2026-11-08T09:03:07.449807+00:00",
+      "git_blob_sha": "e018c3a7b64e0b85ae9e07b2684d0b276a10a861",
+      "path": "rule/Surge/Cryptocurrency/Cryptocurrency.list",
+      "ref": "master",
+      "repository": "blackmatrix7/ios_rule_script",
+      "rules": 43,
+      "sha256": "82eab17c49d55e27aa122b63b9c1103e30713512d79dd10f81352dcc94ca3237",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cryptocurrency/Cryptocurrency.list"
+    },
+    "OpenAI": {
+      "fetched_at": "2026-11-08T09:03:07.449586+00:00",
+      "git_blob_sha": "506c9ec94dad225df23c05a50294d2c440c94dd3",
+      "path": "rule/Surge/OpenAI/OpenAI.list",
+      "ref": "master",
+      "repository": "blackmatrix7/ios_rule_script",
+      "rules": 35,
+      "sha256": "6f4047cdbf6953cf5d9b38c4ccd6da7bc6f1acb91b7a87134f25d5b8f5d2408b",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list"
+    },
+    "PayPal": {
+      "fetched_at": "2026-11-08T09:03:07.449801+00:00",
+      "git_blob_sha": "3ba3c5e42efeeeb282a8fc72bb0d7a2b5463442a",
+      "path": "rule/Surge/PayPal/PayPal.list",
+      "ref": "master",
+      "repository": "blackmatrix7/ios_rule_script",
+      "rules": 248,
+      "sha256": "4ffb6f94d2f1eff835c24b533c3d1d6e0c5a4cfbc32740fa9c32315ae218fd18",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list"
+    },
+    "Proxy": {
+      "fetched_at": "2026-11-08T09:03:07.449847+00:00",
+      "git_blob_sha": "78c2035778ef1c18da9c216fdfe024d7e7f0b320",
+      "path": "rule/Surge/Proxy/Proxy.list",
+      "ref": "master",
+      "repository": "blackmatrix7/ios_rule_script",
+      "rules": 134,
+      "sha256": "15d02f09a6b3271a23c3e959626a06d45cc24abb04f87fc5e16c98fbaa474844",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list"
+    },
+    "Telegram": {
+      "fetched_at": "2026-11-08T09:03:07.449828+00:00",
+      "git_blob_sha": "d55a56961bca071058927de1ebb96a3a60ee4f98",
+      "path": "rule/Surge/Telegram/Telegram.list",
+      "ref": "master",
+      "repository": "blackmatrix7/ios_rule_script",
+      "rules": 46,
+      "sha256": "3b375bee8b2ff16d6c955804a5a3638e6e8fdfcc58d209506a928bdd4cc9891a",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list"
+    },
+    "YouTube": {
+      "fetched_at": "2026-11-08T09:03:07.449821+00:00",
+      "git_blob_sha": "8f5477e84e7fc9cc6b73cc0dc0e4b895c6fc823e",
+      "path": "rule/Surge/YouTube/YouTube.list",
+      "ref": "master",
+      "repository": "blackmatrix7/ios_rule_script",
+      "rules": 190,
+      "sha256": "42274e143447066e26e1ebbf21ae03ce6efb40827f41e2775a84fb16d390713d",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list"
+    }
+  }
+}
