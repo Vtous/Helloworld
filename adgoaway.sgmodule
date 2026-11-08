@@ -1,0 +1,49 @@
+#!name=adgoaway
+#!desc=小寻与两步路去广告。默认仅启用域名拦截；MITM 配置全部注释。未实机验证，规则也会影响其他 App 对相同域名的访问。
+#!author=Vtous；规则参考 fmz200（奶思）、fastrun100
+#!homepage=https://github.com/Vtous/Helloworld
+#!raw-url=https://raw.githubusercontent.com/Vtous/Helloworld/main/adgoaway.sgmodule
+
+# adgoaway — 小寻与两步路广告拦截
+# Modified by Vtous, 2026-11-08.
+# SPDX-License-Identifier: GPL-3.0-only
+# Distributed WITHOUT ANY WARRANTY; see LICENSE.
+# 两步路来源：https://github.com/fmz200/wool_scripts/blob/main/Surge/module/split/partL/LiangBuLu.sgmodule
+# 小寻接口/域名线索：https://linux.do/t/topic/2216200
+# 默认无 MITM、无证书要求、无运行中的脚本；请使用 Surge 规则模式。
+# 缓存广告和通过系统链接直接唤起其他 App 的行为，不能保证被这些规则阻止。
+
+[Rule]
+# 两步路：原模块中的广告域名。
+DOMAIN-SUFFIX,admobile.top,REJECT
+
+# 小寻：公开抓包案例中的广告 SDK 域名。
+DOMAIN-SUFFIX,yfanads.com,REJECT
+DOMAIN-SUFFIX,yfanads.cn,REJECT
+DOMAIN-SUFFIX,adxvip.com,REJECT
+
+# 小寻：公开案例中的广告曝光、点击和候选素材域名。
+DOMAIN,impdsp.meituan.com,REJECT
+DOMAIN,clickdsp.meituan.com,REJECT
+DOMAIN,cdn.51tuiyi.com,REJECT
+DOMAIN,yfan-dsp.tos-cn-shanghai.volces.com,REJECT
+
+# =====================================================================
+# 可选 MITM 配置：默认全部关闭
+# 以后启用：只删除下方 6 行配置开头的「# 」；保留普通说明注释。
+# 然后在 Surge 开启 MITM，并安装、信任 Surge 自己生成的 CA 证书；
+# 同时开启 Rewrite 和 Scripting。取消注释不会自动安装证书或开启总开关。
+# 下列接口/响应结构未在当前手机版本验证；证书固定也可能导致功能不可用。
+#
+# 两步路：保留原模块的接口列表；除开屏/弹窗外还含任务、入口和活动等。
+# [URL Rewrite]
+# ^https?:\/\/helper\.2bulu\.com\/(greenPea\/queryTasks|proSpecial\/allData|saveSplashFrequencyStatistics|getPopInfo|getAppEntranceConfig|promote\/list|getSplash|outing\/reqFoundNewList|outing\/reqIndex) _ reject
+#
+# 小寻：仅处理公开案例指出的广告接口。
+# 响应脚本由本仓库编写，保留未知字段与字段类型；未直接复制原帖不完整的 JS。
+# [Script]
+# adgoaway_xiaoxun = type=http-response,pattern=^https?:\/\/xunapi\.xunkids\.com\/xunkids\/adservice\/resource\/v2\/pulls\/data(?:\?|$),script-path=https://raw.githubusercontent.com/Vtous/Helloworld/main/scripts/xiaoxun-ads.js,requires-body=true,max-size=1048576,timeout=10
+#
+# 仅追加两个接口域名，不覆盖现有 MITM 主机列表，不关闭服务器证书校验。
+# [MITM]
+# hostname = %APPEND% helper.2bulu.com, xunapi.xunkids.com
