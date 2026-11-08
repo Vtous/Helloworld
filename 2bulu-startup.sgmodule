@@ -27,3 +27,10 @@ DOMAIN,v.adintl.cn,REJECT
 DOMAIN,p66-ad.adkwai.com,REJECT
 DOMAIN,nadvideo2.baidu.com,REJECT
 DOMAIN,ads-platform.s3-cache-accelerate.cn-north-1.jdcloud-oss.com,REJECT
+
+# 第二轮联网复测：已命中首轮规则后仍出现的广告相关候选主机。
+DOMAIN,e-u1.ubixioe.com,REJECT
+DOMAIN,tstatic.66mobi.com,REJECT
+DOMAIN,wn.pos.baidu.com,REJECT
+DOMAIN,track2.innoads.cn,REJECT
+DOMAIN,api.shanghailingye.cn,REJECT
