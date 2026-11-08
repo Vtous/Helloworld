@@ -4,13 +4,17 @@ Date: 2026-11-08.
 
 Parser: Surge Mac 6.11.0, build 12720.
 
-| File | Native parser result |
+| Check | Result |
 | --- | --- |
-| surge-macos-modern.conf | Exit 0, OK |
-| surge-ios-modern.conf | Exit 0, OK |
+| adgoaway.list | Eight unique domain conditions; no embedded target policy |
+| adgoaway.sgmodule | No active domain rules; all optional HTTPS configuration remains commented |
+| surge-macos-modern.conf | Native parser: exit 0, OK |
+| surge-ios-modern.conf | Native parser: exit 0, OK |
 
-The iOS reference was checked with the Mac shared parser, not imported on an iPhone.
+Both examples reference the shared remote adgoaway.list. The ordinary rule-set reference is active; the pre-matching alternative is commented out.
 
-Examples contain no real proxy credentials, active API listener, active response script or enabled MITM configuration.
+The iOS reference was checked with the Mac shared parser, not imported on an iPhone. No current device profile was switched or reloaded.
 
-Checks do not switch or reload the active profile. Network reachability and device-side behavior require separate verification.
+Published files are verified through GitHub content readback. An anonymous raw-download recheck was not completed.
+
+Network reachability and device-side behavior require separate verification.
