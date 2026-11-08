@@ -1,30 +1,21 @@
 #!name=adgoaway
-#!desc=小寻与两步路去广告。默认仅启用域名拦截；MITM 配置全部注释。未实机验证，规则也会影响其他 App 对相同域名的访问。
+#!desc=小寻与两步路的可选 HTTPS 去广告模块。基础域名规则已移至 adgoaway.list；本模块的 MITM 相关配置默认全部注释。
 #!author=Vtous
 #!homepage=https://github.com/Vtous/Helloworld
 #!raw-url=https://raw.githubusercontent.com/Vtous/Helloworld/main/adgoaway.sgmodule
 
-# adgoaway — 小寻与两步路广告拦截
+# adgoaway — 可选 HTTPS 重写、响应脚本和 MITM 配置
 # Modified by Vtous, 2026-11-08.
 # SPDX-License-Identifier: GPL-3.0-only
 # Distributed WITHOUT ANY WARRANTY; see LICENSE.
-# 默认无 MITM、无证书要求、无运行中的脚本；请使用 Surge 规则模式。
-# 缓存广告和通过系统链接直接唤起其他 App 的行为，不能保证被这些规则阻止。
-
-[Rule]
-# 两步路：广告域名。
-DOMAIN-SUFFIX,admobile.top,REJECT
-
-# 小寻：广告 SDK 域名。
-DOMAIN-SUFFIX,yfanads.com,REJECT
-DOMAIN-SUFFIX,yfanads.cn,REJECT
-DOMAIN-SUFFIX,adxvip.com,REJECT
-
-# 小寻：广告曝光、点击和候选素材域名。
-DOMAIN,impdsp.meituan.com,REJECT
-DOMAIN,clickdsp.meituan.com,REJECT
-DOMAIN,cdn.51tuiyi.com,REJECT
-DOMAIN,yfan-dsp.tos-cn-shanghai.volces.com,REJECT
+#
+# 基础域名规则已移至 adgoaway.list，需在主配置的 [Rule] 段引用：
+# RULE-SET,https://raw.githubusercontent.com/Vtous/Helloworld/main/adgoaway.list,REJECT,update-interval=86400
+#
+# 本模块不再包含基础域名拦截，默认没有生效中的配置。
+# 需要额外处理 HTTPS 广告接口时，再取消下方配置注释。
+# 仅开启 Surge 的 MITM 总开关不会自动启用这些注释内容。
+# 缓存广告及操作系统直接唤起其他 App 的行为，不保证被网络规则阻止。
 
 # =====================================================================
 # 可选 MITM 配置：默认全部关闭
