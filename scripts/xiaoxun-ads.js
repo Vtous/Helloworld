@@ -1,14 +1,9 @@
 /*
- * adgoaway: optional XiaoXun advertising-response cleanup.
+ * Optional Xiaoxun advertising-response cleanup.
  * Copyright (C) 2026 Vtous
  * SPDX-License-Identifier: GPL-3.0-only
  * Distributed WITHOUT ANY WARRANTY; see ../LICENSE.
- *
- * Endpoint and candidate field names were reported by fastrun100:
- * https://linux.do/t/topic/2216200 (2026-05-20).
- * This is a new implementation, not a verified recovery of the incomplete
- * inline JavaScript displayed in that post. Device compatibility is untested.
- * It does not send requests, store data, or log response contents.
+ * No outgoing requests, persistent storage or response-content logging.
  */
 
 /* global $request, $response, $done */
