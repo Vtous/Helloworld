@@ -40,7 +40,7 @@ def rules(text):
 def unique(items):
     return list(dict.fromkeys(items))
 
-def render(name, items, inputs):
+def render(name, items, inputs, local_count=0):
     notice = []
     if any(i not in ('Anthropic', 'ASNChina') for i in inputs):
         notice.append('# Includes rule data by blackmatrix7; see licenses/blackmatrix7-GPL-2.0.txt.')
@@ -55,7 +55,7 @@ def render(name, items, inputs):
               '# Source revisions are recorded in sources/manifest.json.'] + notice
     if name == 'adgoaway':
         header += [
-            '# 个人精简版：仅保留个人域名规则，不合并通用广告库。',
+            '# 个人规则在前，通用广告覆盖在文件末尾；保留完整拦截范围。',
             '# 小寻与两步路的 HTTPS 接口处理见 adgoaway.sgmodule，默认关闭。',
         ]
         labels = {
@@ -72,8 +72,11 @@ def render(name, items, inputs):
             'DOMAIN-SUFFIX,yfanads.com': '小寻：案例中的 7 条广告域名，当前版本待实机验证',
         }
         annotated = []
-        for item in items:
-            if item in labels:
+        for index, item in enumerate(items):
+            if index == local_count and inputs:
+                annotated += ['', '# 通用广告覆盖',
+                              '# 来源：blackmatrix7/ios_rule_script（Advertising）；随自动更新保留。']
+            if index < local_count and item in labels:
                 annotated += ['', '# ' + labels[item]]
             annotated.append(item)
         items = annotated
@@ -110,10 +113,11 @@ def build(contents, config, previous):
         upstreams = config['pipelines'].get(name, [])
         local = config['local'].get(name, [])
         items = rules('\n'.join(local)) if local else []
+        local_count = len(unique(items))
         for source in upstreams:
             items.extend(normalized[source])
         items = unique(items)
-        content = render(name,items,upstreams)
+        content = render(name,items,upstreams,local_count)
         files[name+'.list'] = content
         manifest['outputs'][name+'.list'] = {
             'rules':len(items), 'upstreams':upstreams,

@@ -66,11 +66,11 @@ The iOS 6 interface also includes a configurable dashboard, request filters, pro
 
 ## Repository files
 
-adgoaway.list contains 60 personal domain conditions, including the original seven Xiaoxun entries and one 2bulu entry with Chinese labels. It no longer includes the general advertising source. The unified profile uses the AdBlock group. See [profile changes](profile-update-2026-11-08.md) for the reduced coverage and remaining service lists.
+adgoaway.list starts with 60 personal domain conditions, including seven Xiaoxun entries and one 2bulu entry with Chinese labels. All 782 general advertising conditions follow at the end under 通用广告覆盖 (842 total). The unified profile uses the AdBlock group. See [profile changes](profile-update-2026-11-08.md) for rule priority and remaining service lists.
 
 adgoaway.sgmodule contains only the optional HTTPS features. Its six configuration lines remain disabled as comments.
 
-- Default filtering: the referenced domain list; no MITM required.
+- Default domain/IP filtering: the referenced ad list; no MITM required. HTTPS URL rules require decryption to inspect the full URL.
 - Optional filtering: HTTPS URL rejection and response cleanup through the module.
 - The response script preserves unrelated fields and passes malformed responses through.
 - Existing ad caches and operating-system deep links may bypass network-based blocking.
@@ -86,7 +86,7 @@ The six MITM configuration lines remain commented out in the module. Uncommentin
 
 Both examples are direct-routing references with a remote adgoaway.list and an uncategorized Outbound group. The full masked personal template is [surge-unified.conf](../profiles/surge-unified.conf).
 
-Use ordinary rule order. The personal ad list now contains only DOMAIN and DOMAIN-SUFFIX conditions; it does not enable pre-matching.
+Use ordinary rule order. The restored mixed ad list includes URL-REGEX and USER-AGENT conditions; do not enable pre-matching for the whole list.
 
 Merge selected sections into a working local profile and retain its real proxies and routing preferences. Do not replace an existing profile with a direct-only reference.
 

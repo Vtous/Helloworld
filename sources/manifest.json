@@ -96,9 +96,11 @@
       ]
     },
     "adgoaway.list": {
-      "rules": 60,
-      "sha256": "c6aaef008a7ef4a280c36cc8ce2e100ef5602f33834b8dbad8c973bffcaa3d50",
-      "upstreams": []
+      "rules": 842,
+      "sha256": "8de78572993dba2e036c1354f56476225ede970ae7b693fdd4b7083dac504b7a",
+      "upstreams": [
+        "Advertising"
+      ]
     }
   },
   "upstreams": {
@@ -111,6 +113,16 @@
       "rules": 5076,
       "sha256": "50f106604b9da0b0adc3f17f0d004dd129684ae95811ac29f13471332c8bcafa",
       "url": "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+    },
+    "Advertising": {
+      "fetched_at": "2026-11-08T11:13:46.526458+00:00",
+      "git_blob_sha": "4a334668a6f77eb35cfd412ff2a0ec5932da45d3",
+      "path": "rule/Surge/Advertising/Advertising.list",
+      "ref": "master",
+      "repository": "blackmatrix7/ios_rule_script",
+      "rules": 782,
+      "sha256": "cda3e6804f933755773cfa8e5894f07489bfa1653951fc3780f4a21da02a5b5d",
+      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list"
     },
     "Anthropic": {
       "fetched_at": "2026-11-08T09:03:07.449720+00:00",
