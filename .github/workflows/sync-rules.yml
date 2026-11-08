@@ -1,6 +1,11 @@
 name: Refresh rule sets
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/sync-rules.yml'
+      - 'tools/sync_rules.py'
+      - 'sources/rules.json'
   schedule:
     - cron: '20 4 * * *'
 permissions:
