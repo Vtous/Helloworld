@@ -21,7 +21,7 @@ Date: 2026-11-08. Native parser: installed Surge Mac 6.11.0 build 12720.
 
 | Output | Conditions |
 | --- | ---: |
-| adgoaway.list | 862 |
+| adgoaway.list | 870 |
 | AI.list | 54 |
 | AI-Priority.list (legacy compatibility only) | 10 |
 | Direct.list | 58 |
@@ -57,6 +57,10 @@ The restored non-comment rule sequence matches the full list before simplificati
 ## 2bulu startup-host consolidation
 
 The 20 DOMAIN conditions in 2bulu-startup.sgmodule are included without policy suffixes in the 2bulu group of adgoaway.list. The local group now has 80 conditions and all 782 general advertising conditions remain at the end (862 total). Existing conditions are preserved. The generator source and manifest are updated, and the standalone module remains for compatibility. The user subsequently reported that startup did not show an ad; this is a device observation, not a guarantee of universal coverage or prevention of system app launches.
+
+## Ximalaya direct-IP additions
+
+A startup-ad reproduction on 2026-11-08 showed direct connections to 101.91.134.52. A read-only Surge DNS lookup resolved adse.ximalaya.com and adbehavior.ximalaya.com through ad.c4.ximalaya.com to 101.91.135.17, 101.91.134.147, 101.91.134.73, 101.91.134.52, 101.91.134.12, 101.91.133.96 and 101.91.135.65. Added that canonical hostname and seven /32 no-resolve conditions to the Ximalaya group. The captured playback/resource/login hosts were not added. IP rotation and reuse remain possible; recheck these addresses when coverage or normal operation changes. The list now has 88 local conditions followed by the unchanged 782 general conditions (870 total). These additions have not yet been retested on the phone. Raw traffic, identifiers and response data are not included in the repository.
 
 ## Limits
 

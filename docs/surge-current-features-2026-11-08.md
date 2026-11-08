@@ -66,7 +66,7 @@ The iOS 6 interface also includes a configurable dashboard, request filters, pro
 
 ## Repository files
 
-adgoaway.list starts with 80 personal domain conditions, including seven Xiaoxun entries and 21 2bulu entries with Chinese labels. All 782 general advertising conditions follow at the end under 通用广告覆盖 (862 total). The unified profile uses the AdBlock group. See [profile changes](profile-update-2026-11-08.md) for rule priority and remaining service lists.
+adgoaway.list starts with 88 personal conditions, including seven Xiaoxun entries and 21 2bulu entries with Chinese labels. All 782 general advertising conditions follow at the end under 通用广告覆盖 (870 total). The unified profile uses the AdBlock group. See [profile changes](profile-update-2026-11-08.md) for rule priority and remaining service lists.
 
 adgoaway.sgmodule contains only the optional HTTPS features. Its six configuration lines remain disabled as comments.
 

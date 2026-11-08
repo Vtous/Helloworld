@@ -11,7 +11,7 @@ Retain the previous profile for rollback. Importing this template does not prese
 ## Changes
 
 - Moved the 160 original inline rule conditions into lists or retained explicit overrides. All original hand-written conditions remain represented.
-- Restored all 782 general advertising conditions after the 80 personal domain conditions in adgoaway.list (862 total). Chinese labels identify Xiaoxun/2bulu, and the final section is marked 通用广告覆盖. The generator preserves this order and the complete coverage. The 20 observed startup-ad hosts from 2bulu-startup.sgmodule are now included in the 2bulu group. The user subsequently reported a startup without ads; all-version coverage and automatic app-launch prevention are not established.
+- Restored all 782 general advertising conditions after the 88 personal conditions in adgoaway.list (870 total). Chinese labels identify Xiaoxun/2bulu, and the final section is marked 通用广告覆盖. The generator preserves this order and the complete coverage. The 20 observed startup-ad hosts from 2bulu-startup.sgmodule are now included in the 2bulu group. The user subsequently reported a startup without ads; all-version coverage and automatic app-launch prevention are not established.
 - Combined OpenAI and Anthropic conditions and local process/domain rules into AI.list. AI has Tokyo as its first choice. The current profile references AI.list only once, after advertising and precise direct rules. The ten-condition AI-Priority.list is a legacy subset retained only to keep older installed profile URLs working. It adds no conditions to AI.list.
 - Combined bank, broker, market, messaging and music allow conditions into Direct.list. Kept LAN and broad domestic fallbacks in separate lists to retain their routing positions.
 - Mirrored remaining service/proxy lists and combined the three China sources into China.list. Every RULE-SET URL in the unified profile points to this repository.
@@ -24,7 +24,7 @@ Retain the previous profile for rollback. Importing this template does not prese
 
 ## Routing differences to review
 
-The combined ad list is evaluated before Direct.list. Its 80 personal conditions appear first, followed by the general advertising source. Both sections use the same AdBlock policy; placing the general section at the end of the file does not move it after Direct.list in the main profile. Compared with the original profile, which put the general advertising source after precise domestic allow rules, this can reject matching traffic earlier. AdBlock = DIRECT temporarily bypasses the combined list; Privacy.list still rejects its two macOS process-scoped destinations.
+The combined ad list is evaluated before Direct.list. Its 88 personal conditions appear first, followed by the general advertising source. Both sections use the same AdBlock policy; placing the general section at the end of the file does not move it after Direct.list in the main profile. Compared with the original profile, which put the general advertising source after precise domestic allow rules, this can reject matching traffic earlier. AdBlock = DIRECT temporarily bypasses the combined list; Privacy.list still rejects its two macOS process-scoped destinations.
 
 The personal ad list uses extended-matching, so its domain conditions can also match visible TLS SNI and HTTP Host. It does not decrypt HTTPS. Pre-matching is not enabled.
 

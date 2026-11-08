@@ -74,6 +74,20 @@ DOMAIN,adsebs.ximalaya.com
 DOMAIN,adbehavior.ximalaya.com
 DOMAIN,adbehavior.wsa.ximalaya.com
 DOMAIN,ad.ximalaya.com
+
+# 喜马拉雅广告服务：adse / adbehavior 的 CNAME
+DOMAIN,ad.c4.ximalaya.com
+
+# 喜马拉雅广告直连 IP：2026-11-08 DNS 核对；地址可能变更或被复用，异常时需重新核查
+IP-CIDR,101.91.135.17/32,no-resolve
+IP-CIDR,101.91.134.147/32,no-resolve
+IP-CIDR,101.91.134.73/32,no-resolve
+IP-CIDR,101.91.134.52/32,no-resolve
+IP-CIDR,101.91.134.12/32,no-resolve
+IP-CIDR,101.91.133.96/32,no-resolve
+IP-CIDR,101.91.135.65/32,no-resolve
+
+# 喜马拉雅统计
 DOMAIN-SUFFIX,xdcs-collector.ximalaya.com
 
 # 其他广告平台

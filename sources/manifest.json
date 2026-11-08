@@ -96,8 +96,8 @@
       ]
     },
     "adgoaway.list": {
-      "rules": 862,
-      "sha256": "cdd7a7551e36441e734fdd044f2b2aee685cfe5a934627fc62d1e274833c9b18",
+      "rules": 870,
+      "sha256": "cad280cc83492deb9c6d8b4c78a69558848e5209820760893341fa4b4fc350d6",
       "upstreams": [
         "Advertising"
       ]
