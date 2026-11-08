@@ -1,10 +1,13 @@
 #!name=两步路开屏广告拦截
-#!desc=根据 2026-11-08 启动抓包补充广告 SDK、竞价与素材主机。无需 MITM；当前为待复测版本，缓存广告和系统唤起行为不保证阻止。
+#!desc=两步路广告相关主机的辅助拦截，无需 MITM。2026-11-08 复测已命中规则但仍有开屏广告，尚未解决开屏与自动跳转。
 #!author=Vtous
 #!homepage=https://github.com/Vtous/Helloworld
 #!raw-url=https://raw.githubusercontent.com/Vtous/Helloworld/main/2bulu-startup.sgmodule
 
 # SPDX-License-Identifier: GPL-3.0-only
+# 2026-11-08 复测：20 条规则启用后仍有开屏广告；断网冷启动没有广告。
+# 此模块仅提供部分广告域名拦截，不代表已解决开屏或系统唤起。
+# 本次未复现自动跳转链，未启用 HTTPS 解密。
 # 仅保存本次观察到的主机，不包含设备标识、请求参数或响应。
 # 两步路同时请求多家广告平台；首轮只封两个主机仍有开屏广告。
 # 精确匹配主机，不封整个 2bulu.com、淘宝、百度或共用云存储域名。
