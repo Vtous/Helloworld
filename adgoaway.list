@@ -1,0 +1,18 @@
+# NAME: adgoaway
+# TYPE: RULE-SET
+# UPDATED: 2026-11-08
+# Domain filters for Xiaoxun and 2bulu.
+# Assign REJECT in the referencing RULE-SET line.
+# SPDX-License-Identifier: GPL-3.0-only
+
+# 2bulu
+DOMAIN-SUFFIX,admobile.top
+
+# Xiaoxun
+DOMAIN-SUFFIX,yfanads.com
+DOMAIN-SUFFIX,yfanads.cn
+DOMAIN-SUFFIX,adxvip.com
+DOMAIN,impdsp.meituan.com
+DOMAIN,clickdsp.meituan.com
+DOMAIN,cdn.51tuiyi.com
+DOMAIN,yfan-dsp.tos-cn-shanghai.volces.com
