@@ -44,6 +44,10 @@ The original consolidation reduced the profile from 401 to 110 lines. The curren
 
 The 10 legacy priority conditions are all present in the 54-condition AI.list. The current profile references AI.list once, after ads and precise direct services; AI-Priority.list is kept only for old URL compatibility. No AI condition was removed. The 39 selected routing cases passed again, together with two extra checks that Claude process matching does not override a blocked ad hostname or a LAN direct rule. The revised profile and its expanded inline rule sets passed the native syntax check. Earlier non-AI matches now take precedence over the former Claude process/domain exceptions. See the profile changes for this intentional ordering difference.
 
+## Flat-menu revision
+
+All category parameters have been removed from the unified profile and the two reference profiles. Policy-group names, declaration order, members, icons and hidden flags remain unchanged. The unified profile's group order also matches the original supplied profile. Non-comment configuration lines are identical after removing only category parameters. All three profiles pass the native syntax check. The live Surge profile was not modified.
+
 ## Limits
 
 The routing model covers ordinary domain and process conditions only; it does not emulate DNS-triggered IP matching, ASN lookups, GEOIP, TLS SNI, URL matching or the full Surge engine. Native parser acceptance is not a live routing test.

@@ -58,7 +58,7 @@ The iOS 6 interface also includes a configurable dashboard, request filters, pro
 9. Global block-quic uses per-policy/all-proxy/all/always-allow. Policy-level block-quic uses auto/on/off/adaptive.
 10. Smart groups should contain concrete proxy policies. DIRECT and nested groups are not valid Smart members.
 11. Smart's testing schedule is not controlled by interval.
-12. category only changes presentation. underlying-proxy creates a proxy chain.
+12. category only changes presentation, but keep it absent from personal profiles to preserve the original flat menu. underlying-proxy creates a proxy chain.
 13. Domain rejection also affects other applications using the same hostname. iOS cannot isolate these rules by process.
 14. A local loopback rule is independent of MITM.
 15. Encrypted DNS is not ad filtering. tcp:// DNS is not encrypted.
@@ -84,7 +84,7 @@ The six MITM configuration lines remain commented out in the module. Uncommentin
 - [macOS](../examples/surge-macos-modern.conf)
 - [iOS](../examples/surge-ios-modern.conf)
 
-Both examples are direct-routing references with a remote adgoaway.list and a categorized Outbound group. The full masked personal template is [surge-unified.conf](../profiles/surge-unified.conf).
+Both examples are direct-routing references with a remote adgoaway.list and an uncategorized Outbound group. The full masked personal template is [surge-unified.conf](../profiles/surge-unified.conf).
 
 Use ordinary rule order. Do not use pre-matching with the expanded mixed ad list, which includes URL-REGEX and USER-AGENT conditions.
 
