@@ -2,7 +2,7 @@
 
 Date: 2026-11-08. Native parser: installed Surge Mac 6.11.0 build 12720.
 
-## Completed checks
+## Original consolidation checks
 
 - All 160 original hand-written rule conditions are retained, either in generated lists or as explicit overrides.
 - All normalized conditions from the 12 referenced upstream sources are present in the corresponding generated outputs.
@@ -21,7 +21,7 @@ Date: 2026-11-08. Native parser: installed Surge Mac 6.11.0 build 12720.
 
 | Output | Conditions |
 | --- | ---: |
-| adgoaway.list | 842 |
+| adgoaway.list | 60 |
 | AI.list | 54 |
 | AI-Priority.list (legacy compatibility only) | 10 |
 | Direct.list | 58 |
@@ -48,10 +48,16 @@ The 10 legacy priority conditions are all present in the 54-condition AI.list. T
 
 All category parameters have been removed from the unified profile and the two reference profiles. Policy-group names, declaration order, members, icons and hidden flags remain unchanged. The unified profile's group order also matches the original supplied profile. Non-comment configuration lines are identical after removing only category parameters. All three profiles pass the native syntax check. The live Surge profile was not modified.
 
+## Personal ad-list simplification
+
+The current ad list retains exactly the 60 local domain conditions, including all seven Xiaoxun rules and admobile.top for 2bulu. The 782 general-source rules were removed intentionally, reducing general advertising coverage. They were not all duplicates or proven obsolete. Chinese group labels identify the app-specific entries. The optional HTTPS module remains disabled and unchanged.
+
+The general advertising pipeline and its upstream definition were removed, so automatic regeneration will not restore the removed rules. The source manifest was updated for the new output. Historical checks above describe the original consolidation before this reduction. The 11 retained upstream snapshots matched their recorded SHA-256 hashes, regeneration passed with no further differences, all 15 other list outputs stayed byte-for-byte unchanged, and a temporary profile containing all 60 ad rules passed the installed Surge parser (OK). Actual app ad coverage remains unverified.
+
 ## Limits
 
 The routing model covers ordinary domain and process conditions only; it does not emulate DNS-triggered IP matching, ASN lookups, GEOIP, TLS SNI, URL matching or the full Surge engine. Native parser acceptance is not a live routing test.
 
 No working node host/password or subscription endpoint was supplied. Connectivity, selected subscription nodes, HTTPS test-endpoint behavior from those nodes, real ad coverage, iOS runtime behavior have not been verified on the user's devices. The refresh job passed once in GitHub Actions; its future scheduled start time is not guaranteed. The current active profile was not changed.
 
-The change in general advertising priority and AI policy-group behavior is documented in [profile changes](profile-update-2026-11-08.md). Review matched rules after importing, and restore the old profile if behavior differs from expectations.
+The reduction in general advertising coverage and the AI policy-group behavior is documented in [profile changes](profile-update-2026-11-08.md). Review matched rules after importing, and restore the old profile if behavior differs from expectations.

@@ -192,9 +192,6 @@
     ]
   },
   "pipelines": {
-    "adgoaway": [
-      "Advertising"
-    ],
     "AI": [
       "OpenAI",
       "Anthropic"
@@ -235,12 +232,6 @@
       "path": "dist/anthropic.list",
       "ref": "main",
       "url": "https://raw.githubusercontent.com/xiaolai/anthropic-claude-surge-rules-set/main/dist/anthropic.list"
-    },
-    "Advertising": {
-      "repository": "blackmatrix7/ios_rule_script",
-      "path": "rule/Surge/Advertising/Advertising.list",
-      "ref": "master",
-      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list"
     },
     "PayPal": {
       "repository": "blackmatrix7/ios_rule_script",

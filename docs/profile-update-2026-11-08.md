@@ -11,7 +11,7 @@ Retain the previous profile for rollback. Importing this template does not prese
 ## Changes
 
 - Moved the 160 original inline rule conditions into lists or retained explicit overrides. All original hand-written conditions remain represented.
-- Expanded adgoaway.list from eight rules to the personal ad conditions plus the original referenced general advertising list. Its misleading aggregate header statistics do not mean that its much larger companion files have been imported.
+- Simplified adgoaway.list to 60 personal domain conditions, retaining all eight original Xiaoxun/2bulu entries with Chinese labels. Removed the 782-condition general advertising feed from both the output and generator configuration. This narrows general ad coverage; it is not a claim that all removed rules were redundant.
 - Combined OpenAI and Anthropic conditions and local process/domain rules into AI.list. AI has Tokyo as its first choice. The current profile references AI.list only once, after advertising and precise direct rules. The ten-condition AI-Priority.list is a legacy subset retained only to keep older installed profile URLs working. It adds no conditions to AI.list.
 - Combined bank, broker, market, messaging and music allow conditions into Direct.list. Kept LAN and broad domestic fallbacks in separate lists to retain their routing positions.
 - Mirrored remaining service/proxy lists and combined the three China sources into China.list. Every RULE-SET URL in the unified profile points to this repository.
@@ -24,9 +24,9 @@ Retain the previous profile for rollback. Importing this template does not prese
 
 ## Routing differences to review
 
-One merged ad list is evaluated before Direct.list. The original profile placed its hand-written filters there, but put the general advertising source after the precise domestic allow rules. General ad conditions can therefore now reject matching traffic that those precise allow rules previously allowed. This follows from collecting all ad conditions into one list. AdBlock = DIRECT temporarily bypasses that merged list; Privacy.list still rejects its two macOS process-scoped destinations.
+The 60 personal ad conditions are evaluated before Direct.list. The general advertising source has been removed rather than moved into this early slot. Ads matched only by that source may return. AdBlock = DIRECT temporarily bypasses the personal list; Privacy.list still rejects its two macOS process-scoped destinations.
 
-The merged ad list uses extended-matching, so its domain conditions can also match visible TLS SNI and HTTP Host. It does not decrypt HTTPS. Pre-matching is not enabled.
+The personal ad list uses extended-matching, so its domain conditions can also match visible TLS SNI and HTTP Host. It does not decrypt HTTPS. Pre-matching is not enabled.
 
 The original OpenAI override domains/processes and Claude rules were fixed to Tokyo, while the old general OpenAI list used AI. They now share the AI group with a Tokyo default. Selecting another AI policy changes all matching AI traffic, including the former Claude priority conditions.
 

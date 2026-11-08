@@ -66,7 +66,7 @@ The iOS 6 interface also includes a configurable dashboard, request filters, pro
 
 ## Repository files
 
-adgoaway.list aggregates the personal ad conditions, the original Xiaoxun/2bulu filters and the previously referenced general advertising source. The unified profile uses the AdBlock group. See [profile changes](profile-update-2026-11-08.md) for the priority change and remaining service lists.
+adgoaway.list contains 60 personal domain conditions, including the original seven Xiaoxun entries and one 2bulu entry with Chinese labels. It no longer includes the general advertising source. The unified profile uses the AdBlock group. See [profile changes](profile-update-2026-11-08.md) for the reduced coverage and remaining service lists.
 
 adgoaway.sgmodule contains only the optional HTTPS features. Its six configuration lines remain disabled as comments.
 
@@ -86,7 +86,7 @@ The six MITM configuration lines remain commented out in the module. Uncommentin
 
 Both examples are direct-routing references with a remote adgoaway.list and an uncategorized Outbound group. The full masked personal template is [surge-unified.conf](../profiles/surge-unified.conf).
 
-Use ordinary rule order. Do not use pre-matching with the expanded mixed ad list, which includes URL-REGEX and USER-AGENT conditions.
+Use ordinary rule order. The personal ad list now contains only DOMAIN and DOMAIN-SUFFIX conditions; it does not enable pre-matching.
 
 Merge selected sections into a working local profile and retain its real proxies and routing preferences. Do not replace an existing profile with a direct-only reference.
 

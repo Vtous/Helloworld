@@ -12,7 +12,7 @@ Restore masked node and subscription values locally before importing. Keep the o
 
 | File | Purpose |
 | --- | --- |
-| [adgoaway.list](adgoaway.list) | Personal ad filters, Xiaoxun, 2bulu, and the existing general advertising source |
+| [adgoaway.list](adgoaway.list) | 60 personal domain filters, including Xiaoxun and 2bulu; no general advertising feed |
 | [AI.list](AI.list) | Combined OpenAI, Claude, process and dependency conditions |
 | [AI-Priority.list](AI-Priority.list) | Legacy compatibility subset; not used by the current profile |
 | [Direct.list](Direct.list) | Banks, brokers, market data, messaging and music allow rules |
@@ -32,7 +32,7 @@ For the ad list alone, add this before broad allow rules and FINAL:
 RULE-SET,https://raw.githubusercontent.com/Vtous/Helloworld/main/adgoaway.list,REJECT,extended-matching,update-interval=86400
 ~~~
 
-The unified profile assigns AdBlock instead of REJECT so the existing filter switch remains available. The expanded ad list affects more services than the former eight-condition list. Domain/IP filtering works without MITM; HTTPS URL conditions cannot inspect a decrypted full URL while MITM is off. Advertising coverage is not guaranteed.
+The unified profile assigns AdBlock instead of REJECT so the existing filter switch remains available. The personal list contains 60 domain conditions and labels the Xiaoxun (7) and 2bulu (1) entries. It no longer merges the 782-condition general advertising feed, which included broad keywords, IP ranges and URL conditions. This deliberately reduces general advertising coverage; the removed entries were not all duplicates or proven obsolete. Domain filtering works without MITM and can affect any app using the same domains. Advertising coverage is not guaranteed.
 
 The current profile references AI.list once, after advertising and precise direct rules. AI-Priority.list contains no additional conditions; its ten entries are already in AI.list. Its old URL is retained for previously installed profiles. The unified profile includes short Chinese comments.
 
@@ -48,7 +48,7 @@ Local additions live in sources/rules.json. After changing them, regenerate with
 python3 tools/sync_rules.py
 ~~~
 
-Generated output edits will be replaced by the next refresh. Source URLs, revisions and content hashes are recorded in sources/manifest.json. Required source notices are retained under licenses/.
+adgoaway is generated only from its local conditions; the removed general advertising feed will not return on refresh. Generated output edits will be replaced by the next refresh. Source URLs, revisions and content hashes are recorded in sources/manifest.json. Required source notices are retained under licenses/.
 
 ## Optional HTTPS module
 

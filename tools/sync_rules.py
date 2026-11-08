@@ -53,6 +53,30 @@ def render(name, items, inputs):
               '# Modified for personal aggregation; provided without warranty.',
               '# Edit sources/rules.json, then run tools/sync_rules.py.',
               '# Source revisions are recorded in sources/manifest.json.'] + notice
+    if name == 'adgoaway':
+        header += [
+            '# 个人精简版：仅保留个人域名规则，不合并通用广告库。',
+            '# 小寻与两步路的 HTTPS 接口处理见 adgoaway.sgmodule，默认关闭。',
+        ]
+        labels = {
+            'DOMAIN-SUFFIX,gdt.qq.com': '腾讯广告与统计',
+            'DOMAIN-SUFFIX,pangolin-sdk-toutiao.com': '字节跳动 / 穿山甲',
+            'DOMAIN-SUFFIX,adukwai.com': '快手广告',
+            'DOMAIN-SUFFIX,mobads.baidu.com': '百度广告',
+            'DOMAIN-SUFFIX,sigmob.com': 'Sigmob 广告',
+            'DOMAIN-SUFFIX,tanx.com': '阿里广告与统计',
+            'DOMAIN,adstats.tencentmusic.com': '腾讯音乐广告与统计',
+            'DOMAIN,adse.ximalaya.com': '喜马拉雅广告与统计',
+            'DOMAIN-SUFFIX,x-adnet.com': '其他广告平台',
+            'DOMAIN-SUFFIX,admobile.top': '两步路：广告平台域名',
+            'DOMAIN-SUFFIX,yfanads.com': '小寻：案例中的 7 条广告域名，当前版本待实机验证',
+        }
+        annotated = []
+        for item in items:
+            if item in labels:
+                annotated += ['', '# ' + labels[item]]
+            annotated.append(item)
+        items = annotated
     if name in ('AI','AI-Priority','Privacy'):
         header.append('# PROCESS-NAME conditions apply on macOS only.')
     return '\n'.join(header + [''] + items) + '\n'
