@@ -1,12 +1,13 @@
 #!name=两步路开屏广告拦截
-#!desc=两步路广告相关主机的辅助拦截，无需 MITM。2026-11-08 复测已命中规则但仍有开屏广告，尚未解决开屏与自动跳转。
+#!desc=20 条广告主机规则已合并到 adgoaway.list；本模块保留作独立安装兼容。无需 MITM，2026-11-08 用户后续反馈启动未出现广告。
 #!author=Vtous
 #!homepage=https://github.com/Vtous/Helloworld
 #!raw-url=https://raw.githubusercontent.com/Vtous/Helloworld/main/2bulu-startup.sgmodule
 
 # SPDX-License-Identifier: GPL-3.0-only
 # 2026-11-08 复测：20 条规则启用后仍有开屏广告；断网冷启动没有广告。
-# 此模块仅提供部分广告域名拦截，不代表已解决开屏或系统唤起。
+# 随后用户反馈：再次启动未出现广告；不代表所有广告或系统唤起均能阻止。
+# 20 条规则现已合并到 adgoaway.list 的两步路分组；已有列表引用可刷新后使用。
 # 本次未复现自动跳转链，未启用 HTTPS 解密。
 # 仅保存本次观察到的主机，不包含设备标识、请求参数或响应。
 # 两步路同时请求多家广告平台；首轮只封两个主机仍有开屏广告。

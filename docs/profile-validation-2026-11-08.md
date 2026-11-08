@@ -21,7 +21,7 @@ Date: 2026-11-08. Native parser: installed Surge Mac 6.11.0 build 12720.
 
 | Output | Conditions |
 | --- | ---: |
-| adgoaway.list | 842 |
+| adgoaway.list | 862 |
 | AI.list | 54 |
 | AI-Priority.list (legacy compatibility only) | 10 |
 | Direct.list | 58 |
@@ -53,6 +53,10 @@ All category parameters have been removed from the unified profile and the two r
 All 782 general advertising conditions are restored after the 60 personal conditions (842 total), under the heading 通用广告覆盖. The advertising pipeline and upstream definition are restored, so daily generation preserves the general section at the end. Existing Chinese labels identify all seven Xiaoxun rules and admobile.top for 2bulu. The optional HTTPS module remains disabled and unchanged.
 
 The restored non-comment rule sequence matches the full list before simplification. All 15 other list outputs remain byte-for-byte unchanged. Offline regeneration reproduces the output, and a temporary profile containing all 842 ad conditions passes the installed Surge parser (OK). These checks establish preservation and syntax validity; actual app ad coverage remains unverified.
+
+## 2bulu startup-host consolidation
+
+The 20 DOMAIN conditions in 2bulu-startup.sgmodule are included without policy suffixes in the 2bulu group of adgoaway.list. The local group now has 80 conditions and all 782 general advertising conditions remain at the end (862 total). Existing conditions are preserved. The generator source and manifest are updated, and the standalone module remains for compatibility. The user subsequently reported that startup did not show an ad; this is a device observation, not a guarantee of universal coverage or prevention of system app launches.
 
 ## Limits
 

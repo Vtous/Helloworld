@@ -79,8 +79,28 @@ DOMAIN-SUFFIX,xdcs-collector.ximalaya.com
 # 其他广告平台
 DOMAIN-SUFFIX,x-adnet.com
 
-# 两步路：广告平台域名
+# 两步路：原有广告域名及启动抓包补充的 20 条规则（无需 MITM）
 DOMAIN-SUFFIX,admobile.top
+DOMAIN,sdk.1rtb.net
+DOMAIN,s.1rtb.net
+DOMAIN,sdkg.fancyapi.com
+DOMAIN,t2.fancyapi.com
+DOMAIN,bid.buluken.com
+DOMAIN,sl.buluken.com
+DOMAIN,sdkconf.buluken.com
+DOMAIN,ad-api.adn-plus.com.cn
+DOMAIN,s.funlinkads.com
+DOMAIN,adm.zhangyuyidong.cn
+DOMAIN,sdklog.zhangyuyidong.cn
+DOMAIN,v.adintl.cn
+DOMAIN,p66-ad.adkwai.com
+DOMAIN,nadvideo2.baidu.com
+DOMAIN,ads-platform.s3-cache-accelerate.cn-north-1.jdcloud-oss.com
+DOMAIN,e-u1.ubixioe.com
+DOMAIN,tstatic.66mobi.com
+DOMAIN,wn.pos.baidu.com
+DOMAIN,track2.innoads.cn
+DOMAIN,api.shanghailingye.cn
 
 # 小寻：案例中的 7 条广告域名，当前版本待实机验证
 DOMAIN-SUFFIX,yfanads.com

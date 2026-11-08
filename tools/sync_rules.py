@@ -68,7 +68,7 @@ def render(name, items, inputs, local_count=0):
             'DOMAIN,adstats.tencentmusic.com': '腾讯音乐广告与统计',
             'DOMAIN,adse.ximalaya.com': '喜马拉雅广告与统计',
             'DOMAIN-SUFFIX,x-adnet.com': '其他广告平台',
-            'DOMAIN-SUFFIX,admobile.top': '两步路：广告平台域名',
+            'DOMAIN-SUFFIX,admobile.top': '两步路：原有广告域名及启动抓包补充的 20 条规则（无需 MITM）',
             'DOMAIN-SUFFIX,yfanads.com': '小寻：案例中的 7 条广告域名，当前版本待实机验证',
         }
         annotated = []
