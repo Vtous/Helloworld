@@ -1,0 +1,29 @@
+#!name=两步路开屏广告拦截
+#!desc=根据 2026-11-08 启动抓包补充广告 SDK、竞价与素材主机。无需 MITM；当前为待复测版本，缓存广告和系统唤起行为不保证阻止。
+#!author=Vtous
+#!homepage=https://github.com/Vtous/Helloworld
+#!raw-url=https://raw.githubusercontent.com/Vtous/Helloworld/main/2bulu-startup.sgmodule
+
+# SPDX-License-Identifier: GPL-3.0-only
+# 仅保存本次观察到的主机，不包含设备标识、请求参数或响应。
+# 两步路同时请求多家广告平台；首轮只封两个主机仍有开屏广告。
+# 精确匹配主机，不封整个 2bulu.com、淘宝、百度或共用云存储域名。
+# 同一广告主机可能被其他 App 使用；关闭本模块即可撤销本模块规则。
+# 不含 MITM，不改动定位、地图、轨迹或登录接口。
+
+[Rule]
+DOMAIN,sdk.1rtb.net,REJECT
+DOMAIN,s.1rtb.net,REJECT
+DOMAIN,sdkg.fancyapi.com,REJECT
+DOMAIN,t2.fancyapi.com,REJECT
+DOMAIN,bid.buluken.com,REJECT
+DOMAIN,sl.buluken.com,REJECT
+DOMAIN,sdkconf.buluken.com,REJECT
+DOMAIN,ad-api.adn-plus.com.cn,REJECT
+DOMAIN,s.funlinkads.com,REJECT
+DOMAIN,adm.zhangyuyidong.cn,REJECT
+DOMAIN,sdklog.zhangyuyidong.cn,REJECT
+DOMAIN,v.adintl.cn,REJECT
+DOMAIN,p66-ad.adkwai.com,REJECT
+DOMAIN,nadvideo2.baidu.com,REJECT
+DOMAIN,ads-platform.s3-cache-accelerate.cn-north-1.jdcloud-oss.com,REJECT
