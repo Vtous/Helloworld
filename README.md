@@ -61,3 +61,7 @@ To use it later, uncomment those lines, remove the unified profile's hostname = 
 ## Validation
 
 See [profile validation](docs/profile-validation-2026-11-08.md). The configuration is syntax-checked, not a device connectivity or ad-coverage guarantee. The real node/subscription values were not supplied or tested, and the active Surge profile was not replaced.
+
+## Skill
+
+- [surgeadskill](surgeadskill/SKILL.md): inspect iPhone ad traffic with Surge, validate narrow blocking rules, and synchronize verified conditions. Includes offline analysis and staging helpers.

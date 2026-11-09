@@ -1,0 +1,4 @@
+interface:
+  display_name: "Surge 广告排查与规则同步"
+  short_description: "连接手机观察指定 App 广告，验证精确拦截规则并同步 GitHub"
+  default_prompt: "使用 $surgeadskill 排查指定 iOS App 的广告请求，验证安全的域名或 IP 拦截，并同步到我的 adgoaway.list。"
