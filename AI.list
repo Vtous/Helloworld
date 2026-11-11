@@ -15,9 +15,6 @@ DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN,accounts.google.com
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-KEYWORD,gstatic
 DOMAIN-SUFFIX,statsig.com
 DOMAIN-SUFFIX,featuregates.org
 DOMAIN-SUFFIX,sentry.io
