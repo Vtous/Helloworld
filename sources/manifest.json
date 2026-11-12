@@ -7,8 +7,8 @@
       "upstreams": []
     },
     "AI.list": {
-      "rules": 54,
-      "sha256": "0a78ee577c7eb6e636c8b91ccfe5c80e841883f77e527bbfb2c642dda3cd1dbb",
+      "rules": 63,
+      "sha256": "3067a6161f87b0871879f5f50aa5a431ef17163e74204c4a4c0fe45c9473e8f7",
       "upstreams": [
         "OpenAI",
         "Anthropic"
@@ -22,12 +22,10 @@
       ]
     },
     "China.list": {
-      "rules": 24757,
-      "sha256": "960056160bed8a089d5b19f9cb6d584f3b22ab665d232bc946a4732b5704a436",
+      "rules": 42,
+      "sha256": "c4592798b75269f7621a03c91caa72c24159731d759af5fce4ca252fd10cc2d3",
       "upstreams": [
-        "China",
-        "ChinaIPs",
-        "ASNChina"
+        "China"
       ]
     },
     "Cryptocurrency.list": {
@@ -70,8 +68,8 @@
       "upstreams": []
     },
     "Proxy.list": {
-      "rules": 134,
-      "sha256": "64b66d1962114d3f1e0a21a1c058bfa63d52ee621110fc5d4b73576c1778a8cd",
+      "rules": 142,
+      "sha256": "d9438a03dbdd17a471528495f8da94cf816608c2ea54e2f78c7bed31aac7646f",
       "upstreams": [
         "Proxy"
       ]
@@ -104,16 +102,6 @@
     }
   },
   "upstreams": {
-    "ASNChina": {
-      "fetched_at": "2026-11-08T09:03:07.451454+00:00",
-      "git_blob_sha": "4d5aaae318fe0859ac18d06eae308bbb9234fafd",
-      "path": "ruleset/ASN.China.list",
-      "ref": "main",
-      "repository": "VirgilClyne/GetSomeFries",
-      "rules": 5076,
-      "sha256": "50f106604b9da0b0adc3f17f0d004dd129684ae95811ac29f13471332c8bcafa",
-      "url": "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
-    },
     "Advertising": {
       "fetched_at": "2026-11-08T11:13:46.526458+00:00",
       "git_blob_sha": "4a334668a6f77eb35cfd412ff2a0ec5932da45d3",
@@ -153,16 +141,6 @@
       "rules": 63,
       "sha256": "15890ccb51dbc91f61aefb4fd4634c8cc030be7f2dc273dfd9e363e6d99e1451",
       "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China.list"
-    },
-    "ChinaIPs": {
-      "fetched_at": "2026-11-08T09:03:07.451155+00:00",
-      "git_blob_sha": "c2faacb534a67e3081c0b1f193a468789f5af552",
-      "path": "rule/Surge/ChinaIPs/ChinaIPs.list",
-      "ref": "master",
-      "repository": "blackmatrix7/ios_rule_script",
-      "rules": 19619,
-      "sha256": "fed4ed76b77828c2616770aa403604afe50ef9acfa14888266afb2452b4e1251",
-      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list"
     },
     "Cryptocurrency": {
       "fetched_at": "2026-11-08T09:03:07.449807+00:00",

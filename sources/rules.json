@@ -118,7 +118,16 @@
       "DOMAIN-SUFFIX,chatgpt.com",
       "DOMAIN-SUFFIX,openai.com",
       "DOMAIN-SUFFIX,oaistatic.com",
-      "DOMAIN-SUFFIX,oaiusercontent.com"
+      "DOMAIN-SUFFIX,oaiusercontent.com",
+      "DOMAIN-SUFFIX,gemini.google.com",
+      "DOMAIN-SUFFIX,gemini.google",
+      "DOMAIN-SUFFIX,aistudio.google.com",
+      "DOMAIN-SUFFIX,makersuite.google.com",
+      "DOMAIN-SUFFIX,bard.google.com",
+      "DOMAIN,ai.google.dev",
+      "DOMAIN,generativelanguage.googleapis.com",
+      "DOMAIN,alkalimakersuite-pa.clients6.google.com",
+      "DOMAIN,alkalimakersuite-pa.googleapis.com"
     ],
     "Direct": [
       "DOMAIN-SUFFIX,cmbchina.com",
@@ -217,6 +226,16 @@
     "Finance-Priority": [
       "DOMAIN-SUFFIX,paypal.com",
       "DOMAIN-SUFFIX,truthsocial.com"
+    ],
+    "Proxy": [
+      "DOMAIN-SUFFIX,twimg.com",
+      "DOMAIN-SUFFIX,twitter.com",
+      "DOMAIN-SUFFIX,x.com",
+      "DOMAIN-SUFFIX,t.co",
+      "DOMAIN-SUFFIX,google.com",
+      "DOMAIN-SUFFIX,googleapis.com",
+      "DOMAIN-SUFFIX,googleusercontent.com",
+      "DOMAIN-SUFFIX,gstatic.com"
     ]
   },
   "pipelines": {
@@ -246,9 +265,7 @@
       "Proxy"
     ],
     "China": [
-      "China",
-      "ChinaIPs",
-      "ASNChina"
+      "China"
     ]
   },
   "upstreams": {
@@ -306,23 +323,19 @@
       "ref": "master",
       "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China.list"
     },
-    "ChinaIPs": {
-      "repository": "blackmatrix7/ios_rule_script",
-      "path": "rule/Surge/ChinaIPs/ChinaIPs.list",
-      "ref": "master",
-      "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs.list"
-    },
-    "ASNChina": {
-      "repository": "VirgilClyne/GetSomeFries",
-      "path": "ruleset/ASN.China.list",
-      "ref": "main",
-      "url": "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
-    },
     "Advertising": {
       "repository": "blackmatrix7/ios_rule_script",
       "path": "rule/Surge/Advertising/Advertising.list",
       "ref": "master",
       "url": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Advertising/Advertising.list"
     }
+  },
+  "exclude_rule_types": {
+    "China": [
+      "IP-CIDR",
+      "IP-CIDR6",
+      "IP-ASN",
+      "GEOIP"
+    ]
   }
 }

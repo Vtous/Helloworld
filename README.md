@@ -22,7 +22,7 @@ Restore masked node and subscription values locally before importing. Keep the o
 | [Trading.list](Trading.list) | Early TradingView and GMGN routing |
 | [Finance-Priority.list](Finance-Priority.list) | Early finance exceptions |
 | Finance / Cryptocurrency / YouTube / Telegram / Apple / Proxy | Service and proxy rule sets |
-| [China.list](China.list) | Combined China domain, IP and ASN conditions |
+| [China.list](China.list) | China domain and user-agent conditions; no IP/ASN-based direct routing |
 
 Lists contain conditions without a target policy. The profile assigns the policy and preserves the routing stages. Use RULE-SET syntax, not DOMAIN-SET syntax.
 

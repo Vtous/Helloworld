@@ -119,7 +119,8 @@ def build(contents, config, previous):
         local_count = len(unique(items))
         for source in upstreams:
             items.extend(normalized[source])
-        items = unique(items)
+        excluded = set(config.get('exclude_rule_types', {}).get(name, []))
+        items = unique(item for item in items if item.split(',', 1)[0] not in excluded)
         content = render(name,items,upstreams,local_count)
         files[name+'.list'] = content
         manifest['outputs'][name+'.list'] = {
